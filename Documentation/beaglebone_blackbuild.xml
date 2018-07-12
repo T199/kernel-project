@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no"?>
+<bsp>
+  <shortname>beaglebone_black</shortname>
+  <name>beaglebone_black</name>
+  <cpu>armv7l</cpu>
+  <arch>arm</arch>
+  <crosscompile>armv7l-timesys-linux-gnueabihf-</crosscompile>
+  <tsrel>kernel-4.9-ts.beaglebone_black</tsrel>
+  <configfiles
+    location="beaglebone_blacktsconf"
+    ext=".kfg"
+    helpext=".help.xml">
+  </configfiles>
+ <nativefstarget
+    build="uImage"
+    image="arch/arm/boot/uImage">
+  </nativefstarget>
+  <initrdtarget
+    build=""
+    image=""
+    initrddir=""
+    initrdimgname=""
+    size="">
+  </initrdtarget>
+  <jffs
+    eblksz=""
+    extra="">
+  </jffs>
+</bsp>
